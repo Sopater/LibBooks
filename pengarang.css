@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --body-color: #e4e9f7;
+    --nav-color: #fff;
+    --side-nav: #97FFF3;
+    --text-color: #000000;
+    --search-bar: #f2f2f2;
+    --search-text: #010718;
+}
+body{
+    height: 100vh;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: var(--nav-color);
+    z-index: 100;
+}
+nav .nav-bar{
+    position: relative;
+    height: 100%;
+    max-width: 1000px;
+    width: 100%;
+    background-color: var(--nav-color);
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .nav-bar .sidebarOpen{
+    color: var(--text-color);
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+nav .nav-bar .logo a{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.menu .logo-toogle{
+    display: none;
+}
+
+.nav-bar .nav-link{
+    display: flex;
+    align-items: center;
+}
+.nav-bar .nav-link li{
+    margin: 0 5px;
+    list-style: none;
+}
+.nav-link li a{
+    position:relative;
+    font-size: 17px;
+    font-weight: 400;
+    color:var(--text-color);
+    opacity: 0.5;
+    text-decoration: none;
+    padding: 10px;
+}
+.nav-link .logo a::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(50%);
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.nav-link li:hover a::before{
+    opacity: 1;
+}
+.searchToogle{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    margin: 0 5px;
+}
+.searchToogle i{
+    position: absolute;
+    color:var(--text-color);
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.searchToogle i.cancel{
+    opacity: 0;
+    pointer-events: none;
+}
+.searchToogle.active i.cancel{
+    opacity: 1;
+    pointer-events: auto;
+}
+.searchToogle.active i.search{
+    opacity: 0;
+    pointer-events: none;
+}
+.searchBox{
+    position:relative;
+}
+.searchBox .search-field{
+    position:absolute;
+    bottom: -70px;
+    left: -185px;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    background-color:var(--nav-color);
+    padding: 3px;
+    border: 2px solid var(--search-text);
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
+    border-radius: 15px;
+    opacity: 0;
+    pointer-events: none;
+}
+.searchToogle.active ~ .search-field{
+    opacity: 1;
+    pointer-events: auto;
+}
+.search-field::before{
+    content: '';
+    position: absolute;
+    left: 202px;
+    top: -4px;
+    height: 12px;
+    width: 12px;
+    background-color: var(--text-color);
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+.search-field input{
+    height: 100%;
+    width: 100%;
+    padding: 0 45px 0 15px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color:var(--text-color);
+}
+.search-field i{
+    position: absolute;
+    color: var(--text-color);
+    right: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+@media (max-width: 790px) {
+
+    nav .nav-bar .sidebarOpen{
+    display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 320px;
+        height: 500px;
+        left: -100%;
+        top: 0;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #000000;
+        z-index: 100;
+        transition: all 0.4s ease;
+    }
+    nav.active .menu{
+        left: -0%;
+    }
+    nav.active .nav-bar .navLogo a{
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    .menu .logo-toogle{
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo-toogle .sidebarClose{
+        color: var(--text-color);
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .nav-bar .nav-link{
+        flex-direction: column;
+        padding-top: 60px;
+    }
+    .nav-link li a{
+        display: block;
+        margin-top: 20px;
+    }
+}
+.userCircle i.user{
+    position:relative;
+    color: var(--text-color);
+    right: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.userCircle i.arrow{
+    position:relative;
+    color: var(--text-color);
+    bottom: 10px;
+    right: 10px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.usPengarang i.user{
+    font-size: 60px;
+}
+.container-fluid{
+    background-image: url(img/wave3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row a{
+    text-decoration: none;
+    color: #000000;
+}
+.row a:hover{
+    text-decoration: none;
+    color:darkgrey;
+}
