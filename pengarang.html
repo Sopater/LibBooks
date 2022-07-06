@@ -54,8 +54,17 @@
                     <i class='bx bx-search search'></i>
                 </div>
             </div>
-            <div class="userCircle">
-              <i class='bx bx-user-circle user'></i><i class='bx bx-down-arrow arrow'></i>
+            <div class="action">
+              <div class="profile" onclick="menuToggle();">
+                <img src="img/profile.png" style="font-size:10px">
+              </div>
+              <div class="menu2">
+                <h3>Nama User<br><span>role</span></h3>
+                <ul>
+                  <li><a href="profileuser.html"><img src="img/user.png">Profile</a></li>
+                  <li><a href="index.html"><img src="img/logout.png">Logout</a></li>
+                </ul>
+              </div>
             </div>
             </div>
         </div>
@@ -375,7 +384,12 @@
 </section>
     <!-- Akhir Footer -->
     <!-- Optional JavaScript; choose one of the two! -->
-
+    <script>
+      function menuToggle(){
+        const toggleMenu = document.querySelector('.menu2');
+        toggleMenu.classList.toggle('active');
+      }
+    </script>
     <script>
         const body = document.querySelector("body"),
             nav = document.querySelector("nav"),
