@@ -214,7 +214,7 @@ nav .nav-bar .logo a{
     }
 }
 #satu .row{
-    background-image: url(img/index.png);
+    background-image: url(../img/index.png);
     background-size:contain;
     background-position: right;
     background-repeat: no-repeat;
@@ -224,7 +224,7 @@ nav .nav-bar .logo a{
     padding-top: 4rem;
     width: 100%;
     text-align: center;
-    background-image: url(img/recent.png);
+    background-image: url(../img/recent.png);
     background-size:cover;
     background-repeat: no-repeat;
     padding-bottom: 3rem;
@@ -270,27 +270,27 @@ nav .nav-bar .logo a{
 #tiga{
     padding-top: 4rem;
     width: 100%;
-    background-image: url(img/wave1.png);
+    background-image: url(../img/wave1.png);
     background-size:contain;
     background-repeat: no-repeat;
     padding-bottom: 2rem;
 }
 #empat{
     width: 100%;
-    background-image: url(img/wave2.png);
+    background-image: url(../img/wave2.png);
     background-size:cover;
     background-repeat: no-repeat;
 }
 #lima {
     padding-top: 4rem;
     width: 100%;
-    background-image: url(img/wave1.png);
+    background-image: url(../img/wave1.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 #enam {
     width: 100%;
-    background-image: url(img/wave3.png);
+    background-image: url(../img/wave3.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 2rem;

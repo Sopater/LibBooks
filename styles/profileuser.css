@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+#satu {
+  padding-top: 3rem;
+  padding-bottom: 100%;
+  background-image: url(../img/wave3bawah.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.form-content {
+  background: white;
+  border: none;
+  outline: none;
+  width: 340px;
+  padding-left: 1rem;
+  margin-bottom: -2px;
+  font-family: "Poppins", sans-serif;
+}
+.form-content1 {
+  background: silver;
+  border: none;
+  outline: none;
+  width: 325px;
+  padding-left: 1rem;
+  margin-bottom: -2px;
+  font-family: "Poppins", sans-serif;
+}
+textarea {
+  border-radius: 25px;
+}
