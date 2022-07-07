@@ -1,0 +1,68 @@
+<nav>
+    <div class="nav-bar">
+        <i class='bx bx-menu sidebarOpen'></i>
+        <span class="logo navLogo"><a href="/">LibBooks</a></span>
+
+        <div class="menu">
+            <div class="logo-toogle">
+                <span class="logo"><a href="/">LibBooks</a></span>
+                <i class='bx bx-x sidebarClose'></i>
+            </div>
+            <ul class="nav-link mt-0 mb-0">
+                <li><a href="/tentang">Tentang</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Kategori
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-white" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#book">Anime</a></li>
+                    <li><a class="dropdown-item" href="#book2">Fantasi</a></li>
+                    <li><a class="dropdown-item" href="#book3">Drama</a></li>
+                    <li><a class="dropdown-item" href="#book4">Fiksi</a></li>
+                    </ul>
+                </li>
+                <li><a href="/buku">Buku</a></li>
+                <li><a href="/pengarang">Pengarang</a></li>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="searchBox">
+            <div class="searchToogle">
+                <i class='bx bx-x cancel'></i>
+                <i class='bx bx-search search'></i>
+            </div>
+            <div class="search-field">
+                <input type="text" placeholder="Search...">
+                <i class='bx bx-search search'></i>
+            </div>
+        </div>
+        <a href="/login" class="btn btn-primary mr-1" style="border-radius: 25px;width: 100px;">Login</a>
+        </div>
+    </div>
+</nav>
+<script>
+  const body = document.querySelector("body"),
+    nav = document.querySelector("nav"),
+    searchToogle = document.querySelector(".searchToogle"),
+    sidebarOpen = document.querySelector(".sidebarOpen"),
+    sidebarClose = document.querySelector(".sidebarClose");
+
+  //js code to toggle search Box
+  searchToogle.addEventListener("click", () => {
+    searchToogle.classList.toggle("active");
+  });
+
+  //js code to toggle sidebar
+  sidebarOpen.addEventListener("click", () => {
+    nav.classList.add("active");
+  });
+
+  body.addEventListener("click", (e) => {
+    let clickedElm = e.target;
+
+    if (!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")) {
+      nav.classList.remove("active");
+    }
+  });
+</script>
