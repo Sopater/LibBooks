@@ -63,6 +63,9 @@ nav .nav-bar .logo a {
   margin: 0 5px;
   list-style: none;
 }
+.nav-bar .nav-link li .nav-item.dropdowm {
+  padding-top: -20px;
+}
 .nav-link li a {
   position: relative;
   font-size: 17px;
@@ -216,7 +219,7 @@ nav .nav-bar .logo a {
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
-  padding-top: 6rem;
+  padding-top: 5.3rem;
   padding-bottom: 11rem;
 }
 #dua {
@@ -321,10 +324,10 @@ nav .nav-bar .logo a {
 #pengarang {
   background-image: url(../img/wave3.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: bottom;
   width: 100%;
-  padding-top: 3rem;
+  padding-top: 5rem;
   padding-bottom: 5rem;
 }
 #pengarang .row a {
@@ -336,3 +339,22 @@ nav .nav-bar .logo a {
   color: darkgrey;
 }
 /*Akhir Pengarang*/
+/*Profile*/
+#profile {
+  background-image: url(../img/wave3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  background-position: bottom;
+  padding-top: 4rem;
+  padding-bottom: 7rem;
+}
+#profile i {
+  margin-top: 0.8rem;
+  padding: 0;
+}
+#profile i.user {
+  font-size: 160px;
+  background-image: none;
+}
+/*Akhir Profile*/
