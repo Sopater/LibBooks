@@ -1,138 +1,163 @@
-
-
-<div class="container-fluid">
-    <div class="container">
-        <div class="row">
-            <div class="usPengarang">
-                <div class="row ms-0">
-                    <div class="col-6 col-sm-6 col-md-6 col-lg-2">
-                        <i class='bx bx-user-circle user'></i>
-                    </div>
-                    <div class="col-7 col-sm-6 col-md-6 col-lg-6 ml-3 mt-4" style="padding-left: 40px;">
-                        <h6>Nama Pengarang</br></br>Genre</br></br>Tangal Lahir</br></br>Deskripsi</h6>
-                    </div>
+<div class="container-fluid" id="profile">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="usPengarang">
+            <div class="row">
+                <div class="col-lg-2" style="text-align: center;">
+                    <i class='bx bx-user-circle user' id="profile"></i>
+                    <a href="/profileuser" class="btn btn-primary" style="border-radius: 10px;width: 100px;padding-left: 0;padding-right:0;">Edit Profile</a>
+                </div>
+                <div class="col-lg-9 mt-4">
+                    <h6>Nama Pengarang</br></br>Genre</br></br>Tangal Lahir</br></br>Deskripsi</h6>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <!-- Swiper -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="" class="col-lg-12 col-md-6 col-sm-6  component-book d-block">
-                            <div class="book-thumbnail">
-                                <div class="book-image">
-                                    <img src="img/Rectangle3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="book-text">lorem ipsum pakyu</div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="" class="component-book d-block">
-                            <div class="book-thumbnail">
-                                <div class="book-image">
-                                    <img src="img/Rectangle3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="book-text">lorem ipsum pakyu</div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="" class="component-book d-block">
-                            <div class="book-thumbnail">
-                                <div class="book-image">
-                                    <img src="img/Rectangle3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="book-text">lorem ipsum pakyu</div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="" class="component-book d-block">
-                            <div class="book-thumbnail">
-                                <div class="book-image">
-                                    <img src="img/Rectangle3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="book-text">lorem ipsum pakyu</div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="" class="component-book d-block">
-                            <div class="book-thumbnail">
-                                <div class="book-image">
-                                    <img src="img/Rectangle3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="book-text">lorem ipsum pakyu</div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="" class="component-book d-block">
-                            <div class="book-thumbnail">
-                                <div class="book-image">
-                                    <img src="img/Rectangle3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="book-text">lorem ipsum pakyu</div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="" class="component-book d-block">
-                            <div class="book-thumbnail">
-                                <div class="book-image">
-                                    <img src="img/Rectangle3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="book-text">lorem ipsum pakyu</div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="" class="component-book d-block">
-                            <div class="book-thumbnail">
-                                <div class="book-image">
-                                    <img src="img/Rectangle3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="book-text">lorem ipsum pakyu</div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="" class="component-book d-block">
-                            <div class="book-thumbnail">
-                                <div class="book-image">
-                                    <img src="img/Rectangle3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="book-text">lorem ipsum pakyu</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
+      </div>
     </div>
+      <div class="row swiper mySwiper" id="recbook">
+        <div class="swiper-wrapper">
+          <div class="col-6 col-md-4 col-lg-2 swiper-slide">
+            <a href="" class="component-book d-block">
+              <div class="book-thumbnail">
+                <div class="book-image">
+                  <img src="/img/Rectangle3.png" alt="" />
+                </div>
+              </div>
+              <div class="book-text">lorem ipsum pakyu</div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 swiper-slide">
+            <a href="" class="component-book d-block">
+              <div class="book-thumbnail">
+                <div class="book-image">
+                  <img src="/img/Rectangle3.png" alt="" />
+                </div>
+              </div>
+              <div class="book-text">lorem ipsum pakyu</div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 swiper-slide">
+            <a href="" class="component-book d-block">
+              <div class="book-thumbnail">
+                <div class="book-image">
+                  <img src="/img/Rectangle3.png" alt="" />
+                </div>
+              </div>
+              <div class="book-text">lorem ipsum pakyu</div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 swiper-slide">
+            <a href="" class="component-book d-block">
+              <div class="book-thumbnail">
+                <div class="book-image">
+                  <img src="/img/Rectangle3.png" alt="" />
+                </div>
+              </div>
+              <div class="book-text">lorem ipsum pakyu</div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 swiper-slide">
+            <a href="" class="component-book d-block">
+              <div class="book-thumbnail">
+                <div class="book-image">
+                  <img src="/img/Rectangle3.png" alt="" />
+                </div>
+              </div>
+              <div class="book-text">lorem ipsum pakyu</div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 swiper-slide">
+            <a href="" class="component-book d-block">
+              <div class="book-thumbnail">
+                <div class="book-image">
+                  <img src="/img/Rectangle3.png" alt="" />
+                </div>
+              </div>
+              <div class="book-text">lorem ipsum pakyu</div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 swiper-slide">
+            <a href="" class="component-book d-block">
+              <div class="book-thumbnail">
+                <div class="book-image">
+                  <img src="/img/Rectangle3.png" alt="" />
+                </div>
+              </div>
+              <div class="book-text">lorem ipsum pakyu</div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 swiper-slide">
+            <a href="" class="component-book d-block">
+              <div class="book-thumbnail">
+                <div class="book-image">
+                  <img src="/img/Rectangle3.png" alt="" />
+                </div>
+              </div>
+              <div class="book-text">lorem ipsum pakyu</div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 swiper-slide">
+            <a href="" class="component-book d-block">
+              <div class="book-thumbnail">
+                <div class="book-image">
+                  <img src="/img/Rectangle3.png" alt="" />
+                </div>
+              </div>
+              <div class="book-text">lorem ipsum pakyu</div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 swiper-slide">
+            <a href="" class="component-book d-block">
+              <div class="book-thumbnail">
+                <div class="book-image">
+                  <img src="/img/Rectangle3.png" alt="" />
+                </div>
+              </div>
+              <div class="book-text">lorem ipsum pakyu</div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 swiper-slide">
+            <a href="" class="component-book d-block">
+              <div class="book-thumbnail">
+                <div class="book-image">
+                  <img src="/img/Rectangle3.png" alt="" />
+                </div>
+              </div>
+              <div class="book-text">lorem ipsum pakyu</div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 swiper-slide">
+            <a href="" class="component-book d-block">
+              <div class="book-thumbnail">
+                <div class="book-image">
+                  <img src="/img/Rectangle3.png" alt="" />
+                </div>
+              </div>
+              <div class="book-text">lorem ipsum pakyu</div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      </div>
+        
+      </div>
+  </div>
 </div>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!-- Initialize Swiper -->
 <script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 5,
-        spaceBetween: 20,
-        slidesPerGroup: 1,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 6,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 </script>
